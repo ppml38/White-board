@@ -1,2 +1,4 @@
 # White-board
-Website for autographs
+Website for getting autographs from celebrities
+
+![](SiteSS.png)
