@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" type="image/png" href="favicon.png" />
+		<link rel="stylesheet" type="text/css" href="style.css"></link>
+		<script src="script.js"></script>
+		<title>White Board</title>
+	</head>
+
+	<body>
+		<svg
+		id="board" 
+		class="board"
+		onmousemove="draw(event)" 
+		onmousedown="set_mouse_button_down()" 
+		onmouseup="reset_mouse_button_down()" 
+		onclick="put_a_dot(event)" >
+		</svg>
+		
+		<div id="toolbox" class="toolbox">
+		<button onclick="set_eraser()">Erazer</button>
+		<table>
+		<tr>
+		<td>Line Thickness</td>
+		<td>Line Color</td>
+		</tr>
+		<tr>
+		<td>
+		<input type="number" min=1 max=10 value=2 onchange="stroke_size=this.value"></input>
+		</td>
+		<td>
+		<input type="color" value="#0000ff" style="width:85%;" onchange="stroke_color=this.value"></input>
+		</td>
+		</tr>
+		</table>
+		<button onclick="getPixel()">Save Sign</button>
+		</div>
+		
+		
+</canvas>
+
+	</body>
+</html>

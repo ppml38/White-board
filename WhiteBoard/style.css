@@ -1,0 +1,38 @@
+
+body
+{
+	font-family: arial,sans-serif;
+	font-size: small;
+}
+
+.board, .board_erase
+{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	background-color: white;
+	cursor: url(edit_icon.ico) 0 16, default;
+}
+
+.board_erase
+{
+	cursor: url(eraser.ico) 8 8, default;
+}
+
+.toolbox
+{
+	position: fixed;
+	top: 0%;
+	right: 0%;
+	background-color: whitesmoke;
+	padding: 5px;
+}
+
+.hidden_canvas
+{
+	display: none;
+	height: 100%;
+	width: 100%;
+}
